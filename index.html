@@ -6,83 +6,132 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>BHEEMA's MADHURA RESTAURANT - Menu</title>
     <style>
+        /* 🪩 Background */
         body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            background-color: #f8f9fa;
             margin: 0;
-            padding: 20px;
-            color: #333;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px;
         }
 
+        /* 💎 Menu Card */
         .menu-container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            width: 100%;
+            max-width: 850px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            padding: 35px;
+            animation: fadeIn 1s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.4);
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ✨ Header */
         h1 {
             text-align: center;
-            color: #c0392b;
+            color: #d56060;
+            font-size: 2.5rem;
             text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
             margin-bottom: 5px;
         }
 
         .tagline {
             text-align: center;
+            color: #fff;
             font-style: italic;
-            color: #7f8c8d;
-            margin-bottom: 20px;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
         }
 
+        /* 🍽️ Section Titles */
         h2 {
-            border-left: 4px solid #c0392b;
-            padding-left: 10px;
-            color: #2c3e50;
-            margin-top: 30px;
+            color: #fff;
+            border-left: 5px solid #fff;
+            padding-left: 12px;
+            font-weight: 600;
+            margin-top: 35px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
         }
 
+        /* 🧾 Menu List */
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         li {
             display: flex;
             justify-content: space-between;
-            background: #f2f2f2;
-            padding: 10px 14px;
-            border-radius: 6px;
-            margin-bottom: 6px;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.75);
+            margin-bottom: 8px;
+            padding: 12px 16px;
+            border-radius: 10px;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: all 0.3s ease;
         }
 
         li:hover {
-            background: #eaeaea;
+            transform: scale(1.03);
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
 
         .price {
             color: #c0392b;
             font-weight: bold;
+            font-size: 1.1rem;
         }
 
+        /* 📞 Footer */
         .footer {
             text-align: center;
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 25px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #fff;
+            opacity: 0.9;
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
             padding-top: 15px;
-            border-top: 1px dashed #ccc;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
     <div class="menu-container">
-        <h1>BHEEMA's MADHURA RESTAURANT</h1>
-        <h2>Menu Details</h2>
-        <p class="tagline">Delicious Food, Great Experience!</p>
+        <h1>🍴 BHEEMA's MADHURA RESTAURANT</h1>
+        <p class="tagline">“Delicious Food • Great Experience • Pure Bliss”</p>
 
         <h2>🔥 Starters</h2>
         <ul>
@@ -110,8 +159,8 @@
         </ul>
 
         <div class="footer">
-            📞 Contact: +91-9490983995<br>
-            Open Daily: 11 AM – 11 PM
+            📞 Contact: <a href="tel:+919490983995">+91-9490983995</a><br>
+            🕐 Open Daily: 11 AM – 11 PM
         </div>
     </div>
 </body>
